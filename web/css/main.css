@@ -1,0 +1,46 @@
+.wrapper {
+    background: #444;
+    height: 3000px;
+}
+.paralax {
+    position: relative;
+    height: 100vh;
+}
+.paralax :nth-child(0) {
+    z-index: 0;
+}
+.paralax :nth-child(1) {
+    z-index: 1;
+}
+.paralax :nth-child(2) {
+    z-index: 2;
+}
+.paralax :nth-child(3) {
+    z-index: 3;
+}
+.paralax .para-image {
+    background: #9797a5 57;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+}
+.content {
+    background: #220001;
+    height: 300px;
+    position: relative;
+    z-index: 10;
+}
+
+
+ 
