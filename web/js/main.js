@@ -73,10 +73,8 @@ function hasScrolled() {
 }
 
 function paralax(scroll){
-    console.log("SCROLL " + scroll);
     $(".para-image").each(function(){
         var paraSpeed = $(this).attr("paralax-speed");
-        console.log(paraSpeed);
         var speed =  (scroll * paraSpeed)/60;
         $(this).css("transform", "translate3d(0px, "+ speed +"px, 0px)");
     });

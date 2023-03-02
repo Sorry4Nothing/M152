@@ -1,6 +1,6 @@
 .wrapper {
     background: #444;
-    height: 3000px;
+    height: 131%;
 }
 .paralax {
     position: relative;
@@ -42,5 +42,90 @@
     z-index: 10;
 }
 
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.firstimg,
+.secondimg,
+.thirdimg,
+.forthimg {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment: fixed;
+}
+
+.secondimg {
+    min-height: 400px;
+}
+
+.thirdimg {
+    min-height: 400px;
+}
+
+.forthimg {
+    background-image: url(https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+    min-height: 100%;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+/*.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}*/
+
+.section-dark {
+    background-color: #220001;
+    color: #ddd;
+}
+
+.text {
+    position: absolute;
+    top: 50%; /*brings it down half way*/
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.text .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+/*.text .border.trans {
+  background-color: transparent;
+}*/
+
+/*will be in effect for anaything under 568px*/
+@media (max-width: 568px) {
+    .firstimg,
+    .secondimg,
+    .thirdimg,
+    .forthimg {
+        background-attachment: scroll;
+    }
+}
 
  

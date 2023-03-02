@@ -1,15 +1,11 @@
-body {
-    background: #84dbd7;
-    overflow: hidden;
-}
 .scene {
     position: absolute;
     bottom: 0;
     left: 0;
     overflow: hidden;
     right: 0;
-    border-bottom: 100px solid #342a2a;
-    height: 800px;
+    height: 100%;
+    background: #84dbd7;
 }
 .scene > div {
     position: absolute;
@@ -23,7 +19,7 @@ body {
 }
 .scene > div.clouds {
     width: 895px;
-    left: 50%;
+    left: 60%;
     margin-left: -447px;
     height: 253px;
     bottom: 250px;
@@ -33,7 +29,7 @@ body {
     width: 908px;
     height: 174px;
     z-index: 2;
-    left: 15%;
+    left: 25%;
     bottom: 20px;
     background: url("http://i.imgur.com/4JOfJhg.png") no-repeat center;
 }
@@ -41,13 +37,13 @@ body {
     width: 960px;
     height: 37px;
     z-index: 2;
-    left: 15%;
+    left: 25%;
     bottom: 20px;
     background: url("http://i.imgur.com/h0aXbZr.png") no-repeat center;
 }
 .scene div.buldings {
     width: 763px;
     height: 303px;
-    left: 20%;
+    left: 30%;
     background: url("http://i.imgur.com/5LmAigM.png") no-repeat center;
 }
